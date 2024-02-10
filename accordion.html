@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="C:\Users\singhr146\OneDrive - Vodafone Group\Desktop\style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="accordion">
+            <h2 class="head">
+                <span>Section 1</span> <span><i class="fa-solid fa-plus plus"></i><i class="fa-solid fa-minus minus"></i></span>
+            </h2>
+            <div class="panel">
+                <p><b>Saving claims verification: </b>see details on the relevant product page.</p>
+                <p><b>VAT:</b> All pricing inclusive unless stated otherwise. For prices stated exclusive of VAT, the VAT rate payable is 20%.</p>
+                <p><b>Gift with Purchase:</b> See details on product page including any additional terms.</p>
+                <p>*Annual Price Rise</p>
+                <p><b>Pay Monthly Plans (excluding Home Broadband):</b>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur culpa voluptas eligendi in commodi esse vel magnam dolore et fuga?</p>
+                <p><b>Home Broadband:</b>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+
+            </div>
+        </div>
+
+        <div class="accordion">
+            <h2 class="head">
+                <span>Section 2</span> <span><i class="fa-solid fa-plus plus"></i><i class="fa-solid fa-minus minus"></i></span>
+            </h2>
+            <div class="panel">
+                <p><b>Saving claims verification: </b>see details on the relevant product page.</p>
+                <p><b>VAT:</b> All pricing inclusive unless stated otherwise. For prices stated exclusive of VAT, the VAT rate payable is 20%.</p>
+                <p><b>Gift with Purchase:</b> See details on product page including any additional terms.</p>
+                <p>*Annual Price Rise</p>
+                <p><b>Pay Monthly Plans (excluding Home Broadband):</b>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur culpa voluptas eligendi in commodi esse vel magnam dolore et fuga?</p>
+                <p><b>Home Broadband:</b>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                
+            </div>
+        </div>
+
+        <div class="accordion">
+            <h2 class="head">
+                <span>Section 3</span> <span><i class="fa-solid fa-plus plus"></i><i class="fa-solid fa-minus minus"></i></span>
+            </h2>
+            <div class="panel">
+                <p><b>Saving claims verification: </b>see details on the relevant product page.</p>
+                <p><b>VAT:</b> All pricing inclusive unless stated otherwise. For prices stated exclusive of VAT, the VAT rate payable is 20%.</p>
+                <p><b>Gift with Purchase:</b> See details on product page including any additional terms.</p>
+                <p>*Annual Price Rise</p>
+                <p><b>Pay Monthly Plans (excluding Home Broadband):</b>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur culpa voluptas eligendi in commodi esse vel magnam dolore et fuga?</p>
+                <p><b>Home Broadband:</b>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                
+            </div>
+        </div>
+    </div>
+    <script>
+        const accord=document.querySelectorAll(".accordion")
+        const panel=document.querySelectorAll(".panel")
+
+        const plus=document.querySelectorAll(".plus")
+        const minus=document.querySelectorAll(".minus")
+
+        for(let i=0;i<accord.length;i++){
+            accord[i].addEventListener("click",function(){
+            panel[i].classList.toggle("active");
+            minus[i].classList.toggle("active");
+            plus[i].classList.toggle("active")
+            //panel.style.paddingTop="10px"
+            console.log("ritu")
+        })
+        }
+    </script>
+</body>
+</html>
